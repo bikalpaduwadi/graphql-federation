@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": "user-1",
+      "name": " John Smith",
+      "role": "user"
+    },
+    {
+      "id": "user-2",
+      "name": "Jane Doe",
+      "role": "user"
+    },
+    {
+      "id": "user-3",
+      "name": "Bob Johnson",
+      "role": "user"
+    },
+    {
+      "id": "user-4",
+      "name": "Alice Williams",
+      "role": "user"
+    },
+    {
+      "id": "user-5",
+      "name": "Jenny lee",
+      "role": "user"
+    }
+  ]
+}

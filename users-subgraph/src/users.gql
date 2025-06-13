@@ -1,0 +1,20 @@
+extend schema
+  @link(url: "https://specs.apollo.dev/federation/v2.1", import: ["@key"])
+
+type User @key(fields: "id") {
+  id: ID!
+
+  "The name of the user"
+  name: String!
+
+  "Role of the user 'Admin' | 'User'"
+  role: String!
+}
+
+type Query {
+  "List of users. Default limit: 5"
+  getUsers(limit: Int): [User!]!
+
+  "User data for given user id"
+  getUserById(id: ID!): User
+}

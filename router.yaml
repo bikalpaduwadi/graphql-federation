@@ -1,0 +1,6 @@
+cors:
+  allow_any_origin: true
+
+supergraph:
+  listen: 127.0.0.1:5555
+  introspection: true

@@ -1,0 +1,28 @@
+{
+  "name": "users-subgraph",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx watch src/server.ts",
+    "fmt": "prettier --write \"**/*.{js,jsx,ts,tsx,json,graphql,gql,md,yml,yaml}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.12.2",
+    "@apollo/subgraph": "^2.11.0",
+    "graphql": "^16.11.0",
+    "graphql-tag": "^2.12.6"
+  },
+  "devDependencies": {
+    "@apollo/rover": "^0.33.0",
+    "@types/node": "^22.15.30",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

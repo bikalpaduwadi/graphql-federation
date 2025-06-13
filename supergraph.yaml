@@ -1,0 +1,10 @@
+subgraphs:
+  users:
+    routing_url: http://localhost:4001/
+    schema:
+      file: ./users-subgraph/src/users.gql
+  tasks:
+    routing_url: http://localhost:4002/
+    schema:
+      file: ./tasks-subgraph/src/tasks.gql
+federation_version: =2.10.0

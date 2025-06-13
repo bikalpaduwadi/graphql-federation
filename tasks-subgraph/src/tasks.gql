@@ -1,0 +1,24 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.1", import: ["@key"])
+
+type Task {
+  id: ID!
+  "The name of the task"
+  name: String!
+  "Priority of the task 'High' | 'Medium' | 'Low'"
+  priority: String!
+  "The user the task is assigned to"
+  user: User
+}
+
+type User @key(fields: "id") {
+  id: ID!
+  "List of tasks assigned to the user"
+  tasks: [Task!]
+}
+
+type Query {
+  "List of tasks. Default limit: 5"
+  getTasks(limit: Int): [Task!]!
+  "Task data for given task id"
+  getTaskById(id: ID!): Task
+}
